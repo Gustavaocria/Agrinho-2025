@@ -1,0 +1,221 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Cinza claro */
+    color: #333; /* Cinza escuro para o texto */
+}
+
+/* Cabeçalho */
+header {
+    background: #4CAF50; /* Verde vibrante */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Verde mais claro ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 30px 20px;
+    max-width: 1000px; /* Largura máxima para o conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo e adiciona margem superior */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Seção Hero (Página Inicial) */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #e8f5e9; /* Verde bem claro */
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    color: #2e7d32; /* Verde mais escuro */
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Pré-visualização de Conteúdo (Cards) */
+.content-preview {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.content-preview h3 {
+    font-size: 2.2rem;
+    color: #388e3c;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: center;
+    gap: 25px; /* Espaçamento entre os cards */
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    flex: 1; /* Permite que os cards cresçam */
+    min-width: 280px; /* Largura mínima para os cards */
+    max-width: 350px; /* Largura máxima para os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+    color: #1b5e20; /* Verde bem escuro */
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #66bb6a; /* Verde mais claro para o botão */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #43a047; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards-container {
+        flex-direction: column; /* Cards empilham em telas menores */
+        align-items: center;
+    }
+
+    .card {
+        min-width: 90%; /* Ocupa quase toda a largura em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block; /* Links de navegação ficam um abaixo do outro */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h4 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
