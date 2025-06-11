@@ -219,3 +219,72 @@ footer {
         font-size: 0.9rem;
     }
 }
+/* ... (Mantenha todos os estilos anteriores) ... */
+
+/* Estilos para a lista de simuladores na página de Soluções */
+.simulators-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os itens dos simuladores */
+    margin-top: 30px;
+}
+
+.simulator-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+    flex: 1;
+    min-width: 300px; /* Largura mínima para cada item */
+    max-width: 450px; /* Largura máxima para cada item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.simulator-item:hover {
+    transform: translateY(-8px); /* Efeito de elevação mais pronunciado */
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.simulator-item h4 {
+    color: #1b5e20; /* Verde escuro */
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.simulator-item p {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Opcional: ajustar o botão dentro dos simuladores se necessário */
+.simulator-item .btn {
+    width: auto; /* Garante que o botão não ocupe 100% da largura */
+    text-align: center;
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+/* Ajustes para texto pequeno dentro dos simuladores */
+.simulator-item .small-text {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Media Queries para responsividade dos simuladores */
+@media (max-width: 768px) {
+    .simulators-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .simulator-item {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
